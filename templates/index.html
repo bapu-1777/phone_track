@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+
+        <p>enter valid phone number and (country,company,check location)....!!!</p>
+        <p>ex ind = "+9178783XXXXX" </p>
+
+        <form action="/signup" method="post">
+            <div class="mb-3">
+
+                <label for="phone" class="form-label">Enter your phone number:</label>
+                <input type="tel" class="form-control" id="phone" name="phone">
+                <div id="phoneHelp" class="form-text">We'll never share your phone number with anyone else.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+
+
+    
+
+
+{% endblock %}
